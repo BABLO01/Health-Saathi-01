@@ -1,0 +1,40 @@
+HEALTH SAATHI — PROJECT HANDOFF
+================================
+
+This is a plain-local GitHub Pages-ready PWA. Continue the SAME project; do not rebuild it from scratch or create a second repository. Preserve the app name Health Saathi, the developer credit Muhammad Usman Channa, existing local data, and stable features.
+
+MAIN FILES
+----------
+- index.html: accessible app shell, dashboard sections, forms, modal, navigation.
+- style.css: responsive soft wellness design, themes, RTL rules, print styles.
+- app.js: local data model, UI rendering, forms, search, backup/restore, notifications, IndexedDB photos, install/share behavior.
+- manifest.json: PWA metadata and local icon.
+- sw.js: offline shell caching.
+- assets/icon.svg: local PWA icon; no external image dependency.
+- README.md: local run and GitHub Pages instructions.
+
+STORAGE
+-------
+Small structured records/settings use localStorage under the `healthSaathiState` key. Profile and medicine photos use IndexedDB database `healthSaathiMedia`, object store `photos`. Backup export includes state and available photo data URLs. Data is local-first and is not sent to a server.
+
+FEATURES IN THIS BUILD
+----------------------
+The build includes a responsive dashboard, today's tips, quick-add health records for blood pressure, blood sugar, weight, pulse, SpO2, temperature, and sleep; water tracking; medicines; notes/reminders; appointments; profile; records/history; search; themes; English/Urdu RTL switching; feature-card ordering and size controls; backup/restore; print report; Web Share/copy fallback; notification status; install option; local PWA manifest and service worker.
+
+TECHNICAL LIMITATIONS
+---------------------
+Browser PWAs cannot guarantee exact background medicine alarms while fully closed. Notifications are checked while the app is open/resumed and depend on browser permission. Camera, install prompt, Web Share, and file APIs depend on HTTPS and device/browser support. Large image storage is subject to browser quotas. Health Saathi is for personal organization and tracking, not diagnosis or treatment.
+
+CONTINUE DEVELOPMENT
+--------------------
+1. Inspect existing files and preserve the current data schema.
+2. Make the smallest affected change.
+3. Test on a narrow Android viewport and after refresh/reopening.
+4. If changing PWA shell files, update the cache version in sw.js.
+5. Keep Muhammad Usman Channa visible in splash, footer, and About.
+6. Update this file with completed work, limitations, and known issues.
+7. Do not add an AI Health Assistant; that remains a separate project.
+
+RELEASE CHECKLIST
+-----------------
+Verify no console errors, all navigation and forms work, health records persist, medicine/profile photos persist, water +/- works, edit/delete works, backup/import works, clear-data confirmation works, themes and Urdu mode persist, layout has no horizontal overflow, service worker loads offline, and the GitHub Pages URL uses HTTPS.

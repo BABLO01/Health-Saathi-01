@@ -1,0 +1,13 @@
+{
+  "name": "Health Saathi",
+  "short_name": "Health Saathi",
+  "description": "Personal health tracking and organization, kept private on your device.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f4fbf8",
+  "theme_color": "#18a889",
+  "orientation": "portrait-primary",
+  "icons": [
+    {"src":"./assets/icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}
+  ]
+}

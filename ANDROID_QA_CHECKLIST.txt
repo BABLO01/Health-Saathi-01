@@ -1,0 +1,19 @@
+ANDROID QA CHECKLIST
+[ ] Splash artwork loads without an external image
+[ ] Open button and auto-open work
+[ ] BP / Sugar / Weight save
+[ ] Water +/- and fill work
+[ ] Medicine add/edit/delete works
+[ ] Medicine camera/gallery photo saves and survives reload
+[ ] Reminder time saves; notifications permission works
+[ ] Notes/reminders save/delete
+[ ] Appointments save/delete
+[ ] Profile camera/gallery photo saves and survives reload
+[ ] Profile name/info saves
+[ ] Feature reorder/resize persists
+[ ] Theme persists
+[ ] Export/import works
+[ ] Clear data works
+[ ] Settings install works when browser offers PWA install
+[ ] Offline reload works after first online load
+[ ] GitHub Pages paths are correct
